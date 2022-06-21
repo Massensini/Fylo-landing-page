@@ -17,14 +17,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
+
+body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/*HEADER STYLES*/
 
 .containerTop {
     display: flex;
     align-items: center;
     
-    height: 80px;
-    padding: 20px;
+    height: 60px;
+    width: 100%;
+    max-width: 500px;
 }
 
 header {
@@ -37,15 +49,79 @@ header {
 
 .navContainer {
     width: calc(100% - 120px);
+    display: flex;
+    justify-content: end;
 }
 
 .navList {
     display: flex;
-    justify-content: end;
     gap: 15px;
 
     list-style: none;
     font-family: 'Raleway', sans-serif;
     color: var(--desaturated-blue);
     cursor: pointer;
+}
+
+/*MAIN STYLES*/
+
+.mainContainer {
+    margin-top: 20px;
+    max-width:  500px;
+}
+
+.descriptionContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.illustrationImg {
+    width: 100%;
+}
+
+.descriptionContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descriptionH2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    color: var(--very-dark-blue);
+}
+
+.descriptionP {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: var(--very-dark-blue);
+}
+
+.getStarted {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.emailInput {
+    height: 40px;
+    width: 100%;
+    border: 1px solid var(--very-dark-blue);
+    border-radius: 5px;
+    outline: none;
+}
+
+.startBtn {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bright-blue);
+    color: var(--light-grayish-blue);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
 }
