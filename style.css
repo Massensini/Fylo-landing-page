@@ -25,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--light-grayish-blue);
     
 }
 
@@ -141,12 +142,14 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 70px;
 }
 
 .infoH2 {
     margin-top: 25px;
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 23px;
     color: var(--very-dark-blue);
 }
 
@@ -160,16 +163,80 @@ li {
 }
 
 .link {
-    width: 30%;
     margin-top: 25px;
     text-decoration: none;
     color: var(--moderate-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+.linkSpan {
     border-bottom: 1px solid var(--moderate-cyan);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.arrowImg {
+    margin-left: 10px;
+}
+
+.containerCEO {
+    background-color: white;
+    margin-top: 70px;
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.42);
+    border-radius: 10px;
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--very-dark-blue);
+}
+
+.quotesImg {
+    width: 15px;
+}
+
+.infoCEO {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ceoImg {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.spanCEO {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    margin-left: 15px;
+}
+
+.spanInfoCEO {
+    font-size: 13px;
+    color: var(--desaturated-blue);
 }
 
 @media screen and (min-width: 800px) {
     * {
         text-align: start;
+    }
+
+    body {
+        padding: 30px 50px 50px 50px;
     }
 
     .containerTop {
@@ -182,6 +249,10 @@ li {
 
     .descriptionContainer, .infoContainer {
         flex-direction: row;
+    }
+
+    .descriptionH2 {
+        font-size: 35px;
     }
 
     .illustrationImg {
@@ -200,5 +271,21 @@ li {
         width: 35%;
         text-align: center;
         font-size: 15px;
+    }
+
+    .infoContainer {
+        margin-top: 100px;
+    }
+
+    .infoContent {
+        align-items: flex-start;
+    }
+
+    .infoH2 {
+        font-size: 35px;
+    }
+
+    .infoP {
+        color: var(--very-dark-blue);
     }
 }
