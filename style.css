@@ -236,7 +236,6 @@ li {
 .getContainer {
     margin-top: 100px;
     padding: 50px 0 50px 0;
-    width: calc(100% + 40px);
     background-color: var(--desaturated-blue);
     display: flex;
     align-items: center;
@@ -280,10 +279,85 @@ li {
     font-size: 13px;
 }
 
+/*FOOTER*/
+
+footer {
+    background-color: var(--very-dark-blue);
+    width: 100%;
+    padding: 50px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.containerFooter {
+    width: 100%;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 35px;
+}
+
+.contactContent {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;    
+    color: var(--light-grayish-blue);
+}
+
+.aboutContainer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: 'Open Sans', sans-serif;    
+    color: var(--light-grayish-blue);
+    font-size: 17px;
+}
+
+.socialMedias {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediasContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.fa-brands {
+    width: 50px;
+    border: 1px solid var(--light-grayish-blue);
+    border-radius: 50%;
+    padding: 15px;
+    color: var(--light-grayish-blue);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-brands:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 800px) {
     * {
         text-align: start;
     }
+        
+    
 
     .containerTop {
         max-width: 100%;
@@ -323,7 +397,6 @@ li {
 
     .infoContainer {
         margin-top: 100px;
-        padding: 50px 50px 0 50px;
     }
 
     .infoContent {
@@ -340,7 +413,6 @@ li {
 
     .getContainer {
         flex-direction: row;
-        width: 100%;
         padding: 50px;
         gap: 150px;        
     }
@@ -359,5 +431,21 @@ li {
 
     .getBtn {
         width: 175px;
+    }
+    
+    footer {
+        padding: 50px;
+    }
+
+    .containerFooter {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .socialMedias {
+        width: auto;
+        margin-top: 30px;
     }
 }
