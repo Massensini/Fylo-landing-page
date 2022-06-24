@@ -235,6 +235,7 @@ li {
 
 .getContainer {
     margin-top: 100px;
+    width: 100%;
     padding: 50px 0 50px 0;
     background-color: var(--desaturated-blue);
     display: flex;
@@ -355,13 +356,21 @@ footer {
 @media screen and (min-width: 800px) {
     * {
         text-align: start;
-    }
-        
-    
+    }    
 
     .containerTop {
         max-width: 100%;
         padding: 50px 50px 0 50px;
+    }
+
+    .logoTop {
+        width: 150px;
+    } 
+    
+    .navList {
+        font-size: 18px;
+        margin-right: 50px;
+        gap: 50px;
     }
 
     .mainContainer {
