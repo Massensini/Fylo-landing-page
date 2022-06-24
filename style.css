@@ -21,7 +21,6 @@
 }
 
 body {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +37,7 @@ body {
     height: 60px;
     width: 100%;
     max-width: 500px;
+    padding: 50px 20px 0 20px;
 }
 
 header {
@@ -70,8 +70,9 @@ li {
 /*MAIN STYLES*/
 
 .mainContainer {
-    margin-top: 20px;
+    margin-top: 50px;
     max-width:  500px;
+    padding: 20px 20px 0 20px;
 }
 
 .descriptionContainer, .infoContainer {
@@ -284,16 +285,14 @@ li {
         text-align: start;
     }
 
-    body {
-        padding: 30px 50px 50px 50px;
-    }
-
     .containerTop {
         max-width: 100%;
+        padding: 50px 50px 0 50px;
     }
 
     .mainContainer {
         max-width: 100%;
+        padding: 50px 50px 0 50px;
     }
 
     .descriptionContainer, .infoContainer {
@@ -324,6 +323,7 @@ li {
 
     .infoContainer {
         margin-top: 100px;
+        padding: 50px 50px 0 50px;
     }
 
     .infoContent {
