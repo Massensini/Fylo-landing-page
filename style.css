@@ -230,6 +230,55 @@ li {
     color: var(--desaturated-blue);
 }
 
+/*GET EARLY ACCES*/
+
+.getContainer {
+    margin-top: 100px;
+    padding: 50px 0 50px 0;
+    width: calc(100% + 40px);
+    background-color: var(--desaturated-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+.getContent {
+    width: 70%;
+    color: var(--light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.getP {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.get {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 55%;
+    margin-top: 20px;
+}
+
+.getInput {
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: start;
+}
+
+.getBtn {
+    height: 35px;
+    font-size: 13px;
+}
+
 @media screen and (min-width: 800px) {
     * {
         text-align: start;
@@ -287,5 +336,28 @@ li {
 
     .infoP {
         color: var(--very-dark-blue);
+    }
+
+    .getContainer {
+        flex-direction: row;
+        width: 100%;
+        padding: 50px;
+        gap: 150px;        
+    }
+
+    .get {
+        gap: 10px
+    }
+
+    .getP {
+        font-size: 15px;
+    }
+
+    .getInput {
+        width: 350px;
+    }
+
+    .getBtn {
+        width: 175px;
     }
 }
